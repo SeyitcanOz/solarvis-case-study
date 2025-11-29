@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* --- RELAXED LINTING --- */
+    "strict": true,               // Keeps basic strictness...
+    "noImplicitAny": false,       // ...but allows 'any' implicitly
+    "strictNullChecks": false,    // ...and stops complaining about 'possibly null' (Great for Babylon)
+    "noUnusedLocals": false,      // ...and ignores unused variables
+    "noUnusedParameters": false,  // ...and ignores unused function args
+    
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src"]
+}
