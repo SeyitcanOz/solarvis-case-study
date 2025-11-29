@@ -116,7 +116,6 @@ Each viewport needs to display the same buildings differently. This is handled b
 - Material swapping (normal materials ↔ section materials)
 - Visibility adjustments (roof transparency in plan view)
 - Mesh filtering (only selected building in section view)
-- Edge renderer toggling
 
 ### Type System
 
@@ -167,7 +166,7 @@ User interactions require converting 2D screen coordinates to 3D scene queries. 
 Meshes are assigned to different layer masks to control which cameras can see them:
 - Transform gizmos visible only in plan and perspective views
 - Section gizmos visible only in section view
-- Guide lines configurable per viewport
+- Guide lines configurable in perspective view
 
 **Rendering Groups**
 
@@ -197,7 +196,7 @@ Meshes are organized into rendering groups to control draw order:
 ### Camera Controls
 
 Each viewport implements independent camera controls:
-- **Plan/Section:** Pan (right-drag), zoom (scroll)
+- **Plan/Section:** Pan (middle-drag), zoom (scroll)
 - **Perspective:** Rotate (right-drag), zoom (scroll), pan (middle-drag)
 
 **Keyboard Shortcuts:**
